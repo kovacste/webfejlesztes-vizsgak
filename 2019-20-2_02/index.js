@@ -18,7 +18,6 @@ function calculateVolume(r, l, h) {
 
 function onInputChanged() {
     let radius = parseFloat(radiusInput.value);
-    levelInput.max = radius * 2;
     let length = parseFloat(lengthInput.value);
     let level = parseFloat(levelInput.value);
     let volume = calculateVolume(radius, length, level);
