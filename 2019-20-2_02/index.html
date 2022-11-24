@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Tankprobléba </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>
+        <a
+            href="https://hu.wikipedia.org/wiki/Henger"
+            target="_blank"
+        >
+            Tankprobléma
+        </a>
+    </h1>
+    <form>
+        <fieldset>
+            <legend>
+                Tartály paraméterei
+            </legend>
+            <div>
+                <label for="radius">Sugár (cm)</label>
+                <input
+                        id="radius"
+                        name="radius"
+                        type="number"
+                        min="1"
+                        step="1"
+                />
+            </div>
+            <div>
+                <label for="length">Hossz (cm)</label>
+                <input
+                        id="length"
+                        name="length"
+                        type="number"
+                        min="1"
+                        step="1"
+                />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Folyadék paraméterei
+            </legend>
+            <div>
+                <label for="level"> Szint </label>
+                <input
+                        id="level"
+                        name="level"
+                        type="range"
+                        max="2"
+                />
+                <span id="levelLabel"></span> cm
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Folyadés mennyisége
+            </legend>
+            <div>
+                <span id="result"></span> cm<sup>3</sup>
+            </div>
+        </fieldset>
+    </form>
+<noscript>
+    <p>
+        A böngésződ nem támogatja a JavaScriptet.
+    </p>
+</noscript>
+<script src="index.js"></script>
+</body>
+</html>

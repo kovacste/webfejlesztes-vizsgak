@@ -1,0 +1,25 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 74px;
+}
+
+h1 > a {
+    text-decoration: none;
+}
+
+h1 > a:hover {
+    text-decoration: underline;
+}
+
+fieldset {
+    padding-top: 10px;
+    border: 3px dotted brown;
+}
+
+label {
+    width: 3cm;
+}
+
+input {
+    width: 100px;
+}
