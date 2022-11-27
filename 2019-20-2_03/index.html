@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Lemezek </title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <h1>
+        <a target="_blank" href="https://musicbrainz.org/">
+            Lemezek
+        </a>
+    </h1>
+
+    <form>
+        <fieldset>
+            <legend>
+                Válasszon albumot
+            </legend>
+            <div>
+                <label for="sbm">Sub Bass Monster - Fekete lemez</label>
+                <input type="radio" name="album" value="sbm" id="sbm">
+            </div>
+            <div>
+                <label for="dyna">Dynatron - The Rigel Axiom</label>
+                <input type="radio" name="album" value="dyna" id="dyna">
+            </div>
+        </fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th id="id" class="italic">Sorszám</th>
+                    <th id="title" class="italic">Cím</th>
+                    <th>Előadó</th>
+                    <th>Hossz</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </form>
+<noscript>
+    <p>
+        A böngésződ nem támogatja a JavaScriptet.
+    </p>
+</noscript>
+<script src="index.js"></script>
+</body>
+</html>
